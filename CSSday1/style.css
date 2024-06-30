@@ -1,0 +1,38 @@
+
+/* 이거는 태그를 잡은것임 */
+body {
+  color: red;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* ID잡는것 */
+
+#box1 {
+  color: blue;
+  background-color: skyblue;
+  padding: 2em;
+  margin-bottom: 5em;
+}
+
+#insidebox {
+  color: white;
+  background-color: black;
+  /* margin: 5em 2em 3em 4em; */
+}
+
+/* class로 잡는것 */
+.box2 {
+  color: green;
+}
+
+/* 글자에 관한  CSS 명령어들 */
+
+#sample1 {
+  font-size: 5vw;
+  font-style: oblique;
+  font-weight: bolder;
+  border: 3px solid black;
+  border-top: 5px dotted blue;
+  /* font-size: 20px;  */
+}
