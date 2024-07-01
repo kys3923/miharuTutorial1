@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 760px;
+}
+
+/* header area */
+
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 2em 0;
+}
+
+.header-left {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-right:hover {
+  cursor: pointer;
+}
+
+.header-right div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+
+/* intro area */
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 6em;
+  padding-top: 6em;
+  padding-bottom: 4em;
+  gap: 1em;
+}
+
+.introduction p {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.introduction p:nth-child(2) {
+  text-align: right;
+}
+
+/* main area */
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.mainLeft {
+  width: 40%;
+  padding-top: 1em;
+  padding-right: 1em;
+  border-right: 1px solid black;
+}
+
+.mainLeft p {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.mainLeft-mailingList {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.mainLeft-mailingList p {
+  font-size: 1em;
+}
+
+.mainLeft-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.mainLeft-input input {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 0px;
+  padding: .75em;
+  width: 70%;
+}
+
+.mainLeft-input input:focus {
+  outline: none;
+}
+
+.mainLeft-input button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-left: none;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 1.75em;
+}
+
+.mainLeft-input button:hover {
+  cursor: pointer;
+}
+
+.mainRight {
+  width: 60%;
+  padding-top: 1em;
+}
+
+.mainRight img {
+  width: 100%;
+}
+
+.mainRight-containers {
+  border-bottom: 1px solid black;
+  padding-left: 2em;
+  position: relative;
+  min-height: 11em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.bottomRightBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: .5em 2em;
+  border: 1px solid black;
+  border-bottom: none;
+  gap: 10px;
+}
+
+.bottomRightBox:hover {
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 2em;
+}
+
+.topLeftBox {
+  position: absolute;
+  top: 0;
+  left: 2em;
+  font-size: small;
+  padding: .5em;
+  padding-top: 1.5em;
+  border: 1px solid black;
+  border-top: none;
+}
+
+/* box1 */
+
+.mainRight-containers:nth-of-type(1) {
+  padding: 2em;
+}
+
+.box1Text {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+/* box 2, 5, 7 */
+.mainRight-containers:nth-of-type(2), .mainRight-containers:nth-of-type(5), .mainRight-containers:nth-of-type(7) {
+  padding: 2em;
+}
+
+.smallerTitle {
+  font-weight: bold;
+}
+
+/* box 3, 6 */
+.mainRight-containers:nth-of-type(3), .mainRight-containers:nth-of-type(6) {
+  padding: 0;
+}
+
+/* box 4, 8 */
+.mainRight-containers:nth-of-type(4), .mainRight-containers:nth-of-type(8) {
+  padding: 2em;
+  text-align: center;
+}
+
+.citation {
+  font-size: smaller;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+q {
+  font-weight: bold;
+  line-height: 1.35em;
+}
+
+.mainRight-containers:nth-of-type(8) {
+  border-bottom: none;
+}
+
+/* bottom */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: calc(7vw + 7vh);
+  padding: 0.75em 0 .5em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
